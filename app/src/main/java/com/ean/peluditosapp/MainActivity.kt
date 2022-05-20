@@ -3,9 +3,12 @@ package com.ean.peluditosapp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
+import com.google.firebase.auth.FirebaseAuth
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var auth: FirebaseAuth;
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -22,6 +25,17 @@ class MainActivity : AppCompatActivity() {
             val intent= Intent(this,Iniciar_Sesion::class.java)
             startActivity(intent)
         }
+
+        val boton_cerrar_sesion=findViewById<Button>(R.id.bn_cerrar_sesion_am)
+        boton_cerrar_sesion.setOnClickListener {
+            auth.signOut()//cierra sesion
+            if(auth.currentUser==null){
+                boton_cerrar_sesion.visibility= View.INVISIBLE
+                boton_login.visibility=View.VISIBLE
+                boton_registrar_usuario.visibility=View.VISIBLE
+            }
+        }
+
 
     }
 }

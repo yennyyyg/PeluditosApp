@@ -8,8 +8,8 @@
     tools:context=".Bienvenido">
 
     <LinearLayout
-        android:layout_width="365dp"
-        android:layout_height="675dp"
+        android:layout_width="367dp"
+        android:layout_height="683dp"
         android:gravity="center_horizontal|center_vertical"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -29,6 +29,12 @@
             android:textColor="@color/black"
             android:textSize="34sp"
             android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="219dp"
+            android:layout_height="167dp"
+            app:srcCompat="@drawable/kitten" />
 
         <Space
             android:layout_width="match_parent"
@@ -61,7 +67,7 @@
             android:layout_height="11dp" />
 
         <Button
-            android:id="@+id/bn_aportar"
+            android:id="@+id/bn_cerrar_sesion_am"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/white"

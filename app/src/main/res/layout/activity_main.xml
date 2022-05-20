@@ -72,7 +72,7 @@
             android:layout_height="11dp" />
 
         <Button
-            android:id="@+id/bn_aportar"
+            android:id="@+id/bn_cerrar_sesion_am"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/white"
