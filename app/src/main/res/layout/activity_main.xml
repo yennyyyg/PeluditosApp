@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00BCD4"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="365dp"
+        android:layout_height="675dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.62">
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="349dp"
+            android:layout_height="106dp"
+            android:text="¡ADOPTA A UN PELUDITO!"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="219dp"
+            android:layout_height="167dp"
+            app:srcCompat="@drawable/kitten" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="13dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:orientation="horizontal"></LinearLayout>
+
+        <Button
+            android:id="@+id/bn_deseas_adop"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+
+            android:backgroundTint="@color/white"
+            android:text="Iniciar Sesion"
+            android:textColor="@color/black" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/bn_ser_voluntario"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+
+            android:backgroundTint="@color/white"
+            android:text="Registrarse"
+            android:textColor="@color/black" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="11dp" />
+
+        <Button
+            android:id="@+id/bn_aportar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:text="Cerrar Sesion"
+            android:textColor="@color/black"
+            android:visibility="invisible" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

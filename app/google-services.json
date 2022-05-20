@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "383256110317",
+    "project_id": "peluditosapp",
+    "storage_bucket": "peluditosapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:383256110317:android:5f3a5f973617189e31d8e4",
+        "android_client_info": {
+          "package_name": "com.ean.peluditosapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "383256110317-qa99rkul2c5vntibd492q80jcvkt4lsj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCa8b0jDVjKYvkySkoxOZKNMConbS-qybo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "383256110317-qa99rkul2c5vntibd492q80jcvkt4lsj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
