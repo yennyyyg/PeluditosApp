@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         //Este boton me lleva a la actividad de Registrar un usuario
-        val boton_registrar_usuario=findViewById<Button>(R.id.bn_ser_voluntario)
+        val boton_registrar_usuario=findViewById<Button>(R.id.bn_registrarpeludito)
         boton_registrar_usuario.setOnClickListener {
             val intent= Intent(this,Registrarse::class.java)
             startActivity(intent)

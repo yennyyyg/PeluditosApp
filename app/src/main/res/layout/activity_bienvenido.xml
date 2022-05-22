@@ -54,12 +54,12 @@
             android:layout_height="wrap_content" />
 
         <Button
-            android:id="@+id/bn_ser_voluntario"
+            android:id="@+id/bn_registrarpeludito"
             android:layout_width="match_parent"
             android:layout_height="62dp"
 
             android:backgroundTint="@color/white"
-            android:text="¿QUIERES SER VOLUNTARIO?"
+            android:text="REGISTRAR UN PELUDITO "
             android:textColor="@color/black" />
 
         <Space

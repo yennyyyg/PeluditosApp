@@ -10,10 +10,12 @@ import android.widget.EditText
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
+import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 
 class Iniciar_Sesion : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth;
+    val db = Firebase.firestore
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,7 +24,7 @@ class Iniciar_Sesion : AppCompatActivity() {
         auth = Firebase.auth
         val boton_regresar=findViewById<Button>(R.id.bn_regresar_l)
         boton_regresar.setOnClickListener {
-            val intent= Intent(this,Registrarse::class.java)
+            val intent= Intent(this,MainActivity::class.java)
             startActivity(intent)
         }
         val txt_correo=findViewById<EditText>(R.id.etext_correo_l)
@@ -57,5 +59,6 @@ class Iniciar_Sesion : AppCompatActivity() {
                     Toast.LENGTH_SHORT).show()
             }
         }
+
     }
 }
