@@ -31,10 +31,10 @@
             android:textStyle="bold" />
 
         <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="219dp"
-            android:layout_height="167dp"
-            app:srcCompat="@drawable/kitten" />
+            android:id="@+id/imageView6"
+            android:layout_width="match_parent"
+            android:layout_height="212dp"
+            app:srcCompat="@drawable/owner" />
 
         <Space
             android:layout_width="match_parent"

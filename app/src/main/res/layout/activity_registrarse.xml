@@ -29,10 +29,10 @@
             android:textStyle="bold" />
 
         <ImageView
-            android:id="@+id/imageView6"
+            android:id="@+id/imageView3"
             android:layout_width="match_parent"
-            android:layout_height="171dp"
-            app:srcCompat="@drawable/pet" />
+            android:layout_height="184dp"
+            app:srcCompat="@drawable/boy" />
 
         <Space
             android:layout_width="match_parent"

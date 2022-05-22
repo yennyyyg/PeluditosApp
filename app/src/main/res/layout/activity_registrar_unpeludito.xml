@@ -53,7 +53,7 @@
             android:layout_width="match_parent"
             android:layout_height="61dp"
             android:ems="10"
-            android:hint="Nombre persona a cargo "
+            android:hint="Nombre completo persona a cargo "
             android:inputType="textPersonName"
             android:minHeight="48dp"
             android:textColor="@color/black"

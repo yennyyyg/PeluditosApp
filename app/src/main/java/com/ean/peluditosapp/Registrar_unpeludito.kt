@@ -27,7 +27,7 @@ class Registrar_unpeludito : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btGuardarPeludo.setOnClickListener {
-            val username = binding.txtUsername.text.toString()
+            val usuario_responsable = binding.txtUsername.text.toString()
             val celular = binding.editTextPhone.text.toString()
             val nombrepeludo = binding.textNombrePeludo.text.toString()
             val canino_felino = binding.textTipo.text.toString()
@@ -35,15 +35,15 @@ class Registrar_unpeludito : AppCompatActivity() {
             val en_adopcion = binding.txtEnadopcion.text.toString()
             val enfermedad = binding.txtEnfermedad.text.toString()
             database = FirebaseDatabase.getInstance().getReference("users")
-            val User = User(nombrepeludo,celular,nombrepeludo,canino_felino,edad_peludo,en_adopcion,enfermedad)
+            val User = User(usuario_responsable,celular,nombrepeludo,canino_felino,edad_peludo,en_adopcion,enfermedad)
 
-            if(celular.isEmpty() || username.isEmpty() || nombrepeludo.isEmpty()|| canino_felino.isEmpty() || edad_peludo.isEmpty() || en_adopcion.isEmpty() || enfermedad.isEmpty()){
+            if(celular.isEmpty() || usuario_responsable.isEmpty() || nombrepeludo.isEmpty()|| canino_felino.isEmpty() || edad_peludo.isEmpty() || en_adopcion.isEmpty() || enfermedad.isEmpty()){
 
                 Toast.makeText(this,"Ningun campo puede estar vacio, por fis, grax",Toast.LENGTH_SHORT).show()
 
             }else{
 
-                database.child(username).setValue(User).addOnSuccessListener {
+                database.child(usuario_responsable).setValue(User).addOnSuccessListener {
                     binding.txtUsername.text.clear()
                     binding.textNombrePeludo.text.clear()
                     binding.textTipo.text.clear()
