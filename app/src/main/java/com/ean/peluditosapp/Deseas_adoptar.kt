@@ -19,25 +19,25 @@ class Deseas_adoptar : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_deseas_adoptar)
-        val storageRef=storage.reference
-        val imagenes=ArrayList<String>()
+        val imagenesperro=ArrayList<String>()
+        val imagenesgato=ArrayList<String>()
         val listRef=storage.reference.child("caninos")
         val listFelinos=storage.reference.child("felinos")
-
+        val listaImg=findViewById<ListView>(R.id.list_view_peluditos)
         val boton_Perro=findViewById<RadioButton>(R.id.chb_perro)
         boton_Perro.setOnClickListener {
             listRef.listAll()
                 .addOnSuccessListener {
                     for (i in it.items){
-                        imagenes.add(i.name+"")
+                        imagenesperro.add(i.name+"")
                     }
-                    Log.d("Firebase","files $imagenes")
+                    Log.d("Firebase","files $imagenesperro")
                 }
                 .addOnFailureListener{
                     Log.d("Firebase","error $it")
                 }
-            val listaImg=findViewById<ListView>(R.id.list_view_peluditos)
-            val adapImg=ArrayAdapter(this,android.R.layout.simple_list_item_1,imagenes)
+
+            val adapImg=ArrayAdapter(this,android.R.layout.simple_list_item_1,imagenesperro)
             listaImg.adapter=adapImg
         }
 
@@ -46,15 +46,15 @@ class Deseas_adoptar : AppCompatActivity() {
             listFelinos.listAll()
                 .addOnSuccessListener {
                     for (i in it.items){
-                        imagenes.add(i.name+"")
+                        imagenesgato.add(i.name+"")
                     }
-                    Log.d("Firebase","files $imagenes")
+                    Log.d("Firebase","files $imagenesgato")
                 }
                 .addOnFailureListener{
                     Log.d("Firebase","error $it")
                 }
-            val listaImg=findViewById<ListView>(R.id.list_view_peluditos)
-            val adapImg=ArrayAdapter(this,android.R.layout.simple_list_item_1,imagenes)
+
+            val adapImg=ArrayAdapter(this,android.R.layout.simple_list_item_1,imagenesgato)
             listaImg.adapter=adapImg
         }
 
