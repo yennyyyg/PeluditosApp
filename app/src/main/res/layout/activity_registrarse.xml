@@ -29,14 +29,16 @@
             android:textStyle="bold" />
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/imageView3"
             android:layout_width="match_parent"
-            android:layout_height="198dp"
-            app:srcCompat="@drawable/kitten" />
+            android:layout_height="184dp"
+            app:srcCompat="@drawable/boy" />
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="33dp" />
+            android:layout_height="16dp" />
+
+
 
         <EditText
             android:id="@+id/etext_correo_registrar"
@@ -71,15 +73,6 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/bn_registrarr_r"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:backgroundTint="@color/white"
-                android:text="Registrar"
-                android:textColor="@color/black" />
-
-            <Button
                 android:id="@+id/bn_regresar_r"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -87,6 +80,16 @@
                 android:backgroundTint="@color/white"
                 android:text="Regresar"
                 android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/bn_registrarr_r"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:text="Registrar"
+                android:textColor="@color/black" />
         </LinearLayout>
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

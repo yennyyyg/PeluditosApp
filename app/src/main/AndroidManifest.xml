@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PeluditosApp" >
         <activity
+            android:name=".Aportar"
+            android:exported="false" />
+        <activity
+            android:name=".Registrar_unpeludito"
+            android:exported="false" />
+        <activity
             android:name=".Deseas_adoptar"
             android:exported="false" />
         <activity
