@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "383256110317",
+    "firebase_url": "https://peluditosapp-default-rtdb.firebaseio.com",
     "project_id": "peluditosapp",
     "storage_bucket": "peluditosapp.appspot.com"
   },
