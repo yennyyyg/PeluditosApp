@@ -44,22 +44,23 @@
             android:orientation="horizontal">
 
             <CheckBox
-                android:id="@+id/checkBox"
+                android:id="@+id/chb_perro"
                 android:layout_width="194dp"
                 android:layout_height="wrap_content"
-                android:text="CheckBox" />
+                android:text="Perro" />
 
             <CheckBox
-                android:id="@+id/checkBox2"
+                android:id="@+id/chb_gato"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="CheckBox" />
+                android:text="Gato" />
         </LinearLayout>
 
-        <WebView
+        <ListView
+            android:id="@+id/list_view_peluditos"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="410dp" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
