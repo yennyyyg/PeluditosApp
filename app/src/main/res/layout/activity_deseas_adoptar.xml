@@ -60,7 +60,13 @@
         <ListView
             android:id="@+id/list_view_peluditos"
             android:layout_width="match_parent"
-            android:layout_height="410dp" />
+            android:layout_height="339dp" />
+
+        <Button
+            android:id="@+id/btn_refrescar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Refrescar" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
