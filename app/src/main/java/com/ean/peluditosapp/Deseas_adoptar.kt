@@ -16,6 +16,7 @@ class Deseas_adoptar : AppCompatActivity() {
         setContentView(R.layout.activity_deseas_adoptar)
         val storageRef=storage.reference
         val imagenes=ArrayList<String>()
+        val imagenes2=ArrayList<String>()
         val listRef=storage.reference.child("caninos")
         val listFelinos=storage.reference.child("felinos")
         val listaImg=findViewById<ListView>(R.id.list_view_peluditos)
@@ -34,9 +35,9 @@ class Deseas_adoptar : AppCompatActivity() {
         listFelinos.listAll()
             .addOnSuccessListener {
                 for (i in it.items){
-                    imagenes.add(i.name+"")
+                    imagenes2.add(i.name+"")
                 }
-                Log.d("Firebase","files $imagenes")
+                Log.d("Firebase","files $imagenes2")
             }
             .addOnFailureListener{
                 Log.d("Firebase","error $it")
@@ -45,14 +46,14 @@ class Deseas_adoptar : AppCompatActivity() {
         val boton_Perro=findViewById<CheckBox>(R.id.chb_perro)
         val boton_Gato=findViewById<CheckBox>(R.id.chb_gato)
         boton_Refre.setOnClickListener {
+            listaImg.clearChildFocus(findViewById<ListView>(R.id.list_view_peluditos))
             if (boton_Perro.isChecked){
 
                 val adapImg=ArrayAdapter(this,android.R.layout.simple_list_item_1,imagenes)
                 listaImg.adapter=adapImg
             }else if (boton_Gato.isChecked){
-
-                val adapImg=ArrayAdapter(this,android.R.layout.simple_list_item_1,imagenes)
-                listaImg.adapter=adapImg
+                val adapImgGato=ArrayAdapter(this,android.R.layout.simple_list_item_1,imagenes)
+                listaImg.adapter=adapImgGato
             }else{
                 Toast.makeText(this,"Seleccione una sola opcion perro o gato, para cargar",Toast.LENGTH_SHORT).show()
             }
