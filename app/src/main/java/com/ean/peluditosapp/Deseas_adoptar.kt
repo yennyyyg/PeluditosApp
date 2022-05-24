@@ -56,9 +56,10 @@ class Deseas_adoptar : AppCompatActivity() {
                 listaImg.adapter=adapImgGato
             }else if (boton_Perro.isChecked && boton_Gato.isChecked ){
                 Toast.makeText(this,"Seleccione una sola opcion perro o gato, para cargar",Toast.LENGTH_SHORT).show()
+                listaImg.adapter=null
             }else{
                 Toast.makeText(this,"No ha seleccionado ninguna opción",Toast.LENGTH_SHORT).show()
-
+                listaImg.adapter=null
             }
 
         }
