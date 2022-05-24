@@ -46,13 +46,13 @@ class Deseas_adoptar : AppCompatActivity() {
         val boton_Perro=findViewById<CheckBox>(R.id.chb_perro)
         val boton_Gato=findViewById<CheckBox>(R.id.chb_gato)
         boton_Refre.setOnClickListener {
-            listaImg.clearFocus()
-            if (boton_Perro.isChecked){
+            listaImg.clearChoices()
+            if (boton_Perro.isChecked && !boton_Gato.isChecked){
 
                 val adapImg=ArrayAdapter(this,android.R.layout.simple_list_item_1,imagenes)
                 listaImg.adapter=adapImg
-            }else if (boton_Gato.isChecked){
-                val adapImgGato=ArrayAdapter(this,android.R.layout.simple_list_item_1,imagenes)
+            }else if (boton_Gato.isChecked && !boton_Perro.isChecked){
+                val adapImgGato=ArrayAdapter(this,android.R.layout.simple_list_item_1,imagenes2)
                 listaImg.adapter=adapImgGato
             }else if (boton_Perro.isChecked && boton_Gato.isChecked ){
                 Toast.makeText(this,"Seleccione una sola opcion perro o gato, para cargar",Toast.LENGTH_SHORT).show()
