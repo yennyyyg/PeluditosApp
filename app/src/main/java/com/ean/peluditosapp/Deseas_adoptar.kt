@@ -3,10 +3,7 @@ package com.ean.peluditosapp
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.widget.ArrayAdapter
-import android.widget.Button
-import android.widget.ListView
-import android.widget.RadioButton
+import android.widget.*
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.ktx.storage
 
@@ -21,6 +18,8 @@ class Deseas_adoptar : AppCompatActivity() {
         val imagenes=ArrayList<String>()
         val listRef=storage.reference.child("caninos")
         val listFelinos=storage.reference.child("felinos")
+        val listaImg=findViewById<ListView>(R.id.list_view_peluditos)
+       //Perros
         listRef.listAll()
             .addOnSuccessListener {
                 for (i in it.items){
@@ -31,11 +30,33 @@ class Deseas_adoptar : AppCompatActivity() {
             .addOnFailureListener{
                 Log.d("Firebase","error $it")
             }
+//Gatos
+        listFelinos.listAll()
+            .addOnSuccessListener {
+                for (i in it.items){
+                    imagenes.add(i.name+"")
+                }
+                Log.d("Firebase","files $imagenes")
+            }
+            .addOnFailureListener{
+                Log.d("Firebase","error $it")
+            }
         val boton_Refre=findViewById<Button>(R.id.btn_refrescar)
+        val boton_Perro=findViewById<CheckBox>(R.id.chb_perro)
+        val boton_Gato=findViewById<CheckBox>(R.id.chb_gato)
         boton_Refre.setOnClickListener {
-            val listaImg=findViewById<ListView>(R.id.list_view_peluditos)
-            val adapImg=ArrayAdapter(this,android.R.layout.simple_list_item_1,imagenes)
-            listaImg.adapter=adapImg
+            if (boton_Perro.isChecked){
+
+                val adapImg=ArrayAdapter(this,android.R.layout.simple_list_item_1,imagenes)
+                listaImg.adapter=adapImg
+            }else if (boton_Gato.isChecked){
+
+                val adapImg=ArrayAdapter(this,android.R.layout.simple_list_item_1,imagenes)
+                listaImg.adapter=adapImg
+            }else{
+                Toast.makeText(this,"Seleccione una sola opcion perro o gato, para cargar",Toast.LENGTH_SHORT).show()
+            }
+
         }
 
     }
