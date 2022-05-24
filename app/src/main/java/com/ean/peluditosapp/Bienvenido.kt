@@ -19,5 +19,11 @@ class Bienvenido : AppCompatActivity() {
             val intent= Intent(this,Registrar_unpeludito::class.java)
             startActivity(intent)
         }
+        val boton_aportar=findViewById<Button>(R.id.bt_aportar)
+        boton_aportar.setOnClickListener {
+            val intent= Intent(this,Aportar::class.java)
+            startActivity(intent)
+        }
+
     }
 }

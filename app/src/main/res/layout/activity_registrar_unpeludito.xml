@@ -56,7 +56,7 @@
             android:hint="Nombre completo persona a cargo "
             android:inputType="textPersonName"
             android:minHeight="48dp"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textColorHint="@color/white" />
 
         <EditText
@@ -67,7 +67,7 @@
             android:hint="Celular"
             android:inputType="phone"
             android:minHeight="48dp"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textColorHint="@color/white" />
 
         <EditText
@@ -76,7 +76,7 @@
             android:layout_width="match_parent"
             android:layout_height="68dp"
             android:hint="Nombre peludito "
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textColorHint="@color/white" />
 
         <EditText
@@ -84,7 +84,7 @@
             android:layout_width="match_parent"
             android:layout_height="68dp"
             android:hint="Canino / Felino"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textColorHint="@color/white" />
 
         <EditText
@@ -95,7 +95,7 @@
             android:hint="Edad aproximada del peludito (en años) "
             android:inputType="number"
             android:minHeight="48dp"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textColorHint="@color/white" />
 
         <EditText
@@ -106,7 +106,7 @@
             android:hint="¿Por que lo quieres dar en adopcion?"
             android:inputType="textPersonName"
             android:minHeight="48dp"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textColorHint="@color/white" />
 
         <EditText
@@ -117,7 +117,7 @@
             android:hint="¿Alguna enfermedad?"
             android:inputType="textPersonName"
             android:minHeight="48dp"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textColorHint="@color/white" />
 
         <Button
@@ -125,7 +125,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/white"
-            android:text="GUARDAR"
+            android:text="ENVIAR"
+            android:textAlignment="center"
             android:textColor="@color/black" />
 
     </LinearLayout>

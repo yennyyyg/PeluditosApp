@@ -10,12 +10,13 @@ import android.widget.EditText
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
-import com.google.firebase.firestore.ktx.firestore
+
 import com.google.firebase.ktx.Firebase
 
 class Iniciar_Sesion : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth;
-    val db = Firebase.firestore
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

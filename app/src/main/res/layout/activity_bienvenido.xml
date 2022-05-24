@@ -49,9 +49,6 @@
             android:text="¿DESEAS ADOPTAR?"
             android:textColor="@color/black" />
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
 
         <Button
             android:id="@+id/bn_registrarpeludito"
@@ -59,21 +56,17 @@
             android:layout_height="62dp"
 
             android:backgroundTint="@color/white"
-            android:text="REGISTRAR UN PELUDITO "
+            android:text="REGISTRAR UN PELUDITO ,PARA QUE PUEDA SER ADOPTADO "
             android:textColor="@color/black" />
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="11dp" />
 
         <Button
-            android:id="@+id/bn_cerrar_sesion_am"
+            android:id="@+id/bt_aportar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/white"
-            android:text="¿DESEAS APORTARLE A NUESTROS PELUDITOS?"
-            android:textColor="@color/black"
-            android:visibility="visible" />
+            android:text="APORTALE A NUESTROS PELUDITOS "
+            android:textColor="@color/black" />
 
 
     </LinearLayout>

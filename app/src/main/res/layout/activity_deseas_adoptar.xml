@@ -8,8 +8,8 @@
     tools:context=".Deseas_adoptar">
 
     <LinearLayout
-        android:layout_width="385dp"
-        android:layout_height="708dp"
+        android:layout_width="329dp"
+        android:layout_height="651dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -39,33 +39,34 @@
             android:layout_height="14dp" />
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="61dp"
+            android:layout_width="311dp"
+            android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <CheckBox
                 android:id="@+id/chb_perro"
-                android:layout_width="194dp"
+                android:layout_width="179dp"
                 android:layout_height="wrap_content"
-                android:text="Perro" />
+                android:text="CANINO" />
 
             <CheckBox
                 android:id="@+id/chb_gato"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="158dp"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="Gato" />
+                android:text="FELINO" />
         </LinearLayout>
 
         <ListView
             android:id="@+id/list_view_peluditos"
             android:layout_width="match_parent"
-            android:layout_height="339dp" />
+            android:layout_height="277dp" />
 
         <Button
             android:id="@+id/btn_refrescar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:minHeight="48dp"
             android:text="Refrescar" />
 
     </LinearLayout>

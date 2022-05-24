@@ -30,20 +30,31 @@
             android:textSize="34sp"
             android:textStyle="bold" />
 
-        <ImageView
-            android:id="@+id/imageView6"
-            android:layout_width="match_parent"
-            android:layout_height="212dp"
-            app:srcCompat="@drawable/owner" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="13dp" />
-
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="37dp"
-            android:orientation="horizontal"></LinearLayout>
+            android:layout_height="208dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="121dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/owner" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/kk" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/jij" />
+        </LinearLayout>
 
         <Button
             android:id="@+id/bn_deseas_adop"
