@@ -77,18 +77,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:backgroundTint="@color/white"
+                android:backgroundTint="@color/black"
                 android:text="Regresar"
-                android:textColor="@color/black" />
+                android:textColor="@color/white" />
 
             <Button
                 android:id="@+id/bn_registrarr_r"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:backgroundTint="@color/white"
+                android:backgroundTint="@color/black"
                 android:text="Registrar"
-                android:textColor="@color/black" />
+                android:textColor="@color/white" />
         </LinearLayout>
 
     </LinearLayout>

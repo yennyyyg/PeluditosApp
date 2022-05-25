@@ -62,19 +62,19 @@
                 android:layout_width="93dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:backgroundTint="@color/white"
+                android:backgroundTint="@color/black"
                 android:fitsSystemWindows="false"
                 android:text="Regresar"
-                android:textColor="@color/black" />
+                android:textColor="@color/white" />
 
             <Button
                 android:id="@+id/bn_entrar_l"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:backgroundTint="@color/white"
+                android:backgroundTint="@color/black"
                 android:text="Entrar"
-                android:textColor="@color/black" />
+                android:textColor="@color/white" />
         </LinearLayout>
 
     </LinearLayout>

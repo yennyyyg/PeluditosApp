@@ -61,9 +61,9 @@
             android:layout_width="match_parent"
             android:layout_height="63dp"
 
-            android:backgroundTint="@color/white"
+            android:backgroundTint="@color/black"
             android:text="Iniciar Sesion"
-            android:textColor="@color/black" />
+            android:textColor="@color/white" />
 
         <Space
             android:layout_width="match_parent"
@@ -74,9 +74,9 @@
             android:layout_width="match_parent"
             android:layout_height="62dp"
 
-            android:backgroundTint="@color/white"
+            android:backgroundTint="@color/black"
             android:text="Registrarse"
-            android:textColor="@color/black" />
+            android:textColor="@color/white" />
 
         <Space
             android:layout_width="match_parent"

@@ -16,6 +16,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="match_parent"
+            android:layout_height="167dp"
+            app:srcCompat="@drawable/cute" />
+
         <TextView
             android:id="@+id/textView3"
             android:layout_width="match_parent"
@@ -25,13 +31,6 @@
             android:textColor="@color/black"
             android:textSize="34sp"
             android:textStyle="bold" />
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="219dp"
-            android:layout_height="167dp"
-            android:layout_gravity="center_horizontal"
-            app:srcCompat="@drawable/kitten" />
 
 
         <Space
@@ -60,14 +59,16 @@
         <ListView
             android:id="@+id/list_view_peluditos"
             android:layout_width="match_parent"
-            android:layout_height="277dp" />
+            android:layout_height="296dp" />
 
         <Button
             android:id="@+id/btn_refrescar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
             android:minHeight="48dp"
-            android:text="Refrescar" />
+            android:text="Refrescar"
+            android:textColor="@color/white" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

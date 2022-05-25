@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#00BCD4"
+    android:background="#04C3DC"
     tools:context=".Bienvenido">
 
     <LinearLayout
@@ -32,41 +32,49 @@
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="219dp"
-            android:layout_height="167dp"
-            app:srcCompat="@drawable/kitten" />
+            android:layout_width="match_parent"
+            android:layout_height="265dp"
+            app:srcCompat="@drawable/tierno" />
 
         <Space
             android:layout_width="match_parent"
             android:layout_height="13dp" />
+
 
         <Button
             android:id="@+id/bn_deseas_adop"
             android:layout_width="match_parent"
             android:layout_height="63dp"
 
-            android:backgroundTint="@color/white"
+            android:backgroundTint="@color/black"
             android:text="¿DESEAS ADOPTAR?"
-            android:textColor="@color/black" />
-
+            android:textColor="@color/white" />
 
         <Button
             android:id="@+id/bn_registrarpeludito"
             android:layout_width="match_parent"
-            android:layout_height="62dp"
+            android:layout_height="wrap_content"
 
-            android:backgroundTint="@color/white"
+            android:backgroundTint="@color/black"
             android:text="REGISTRAR UN PELUDITO ,PARA QUE PUEDA SER ADOPTADO "
-            android:textColor="@color/black" />
+            android:textColor="@color/white" />
 
 
         <Button
             android:id="@+id/bt_aportar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/white"
+            android:layout_height="63dp"
+            android:backgroundTint="@color/black"
             android:text="APORTALE A NUESTROS PELUDITOS "
-            android:textColor="@color/black" />
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/bt_regresar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black"
+            android:text="REGRESAR"
+            android:textColor="@color/white" />
 
 
     </LinearLayout>

@@ -1,8 +1,10 @@
 package com.ean.peluditosapp
 
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.Toast
 import com.ean.peluditosapp.databinding.ActivityAportarBinding
 
@@ -47,6 +49,11 @@ class Aportar : AppCompatActivity() {
 
             }
 
+        }
+        val boton_REGRESAR1=findViewById<Button>(R.id.bt_atrasaportar)
+        boton_REGRESAR1.setOnClickListener {
+            val intent= Intent(this,Bienvenido::class.java)
+            startActivity(intent)
         }
 
 

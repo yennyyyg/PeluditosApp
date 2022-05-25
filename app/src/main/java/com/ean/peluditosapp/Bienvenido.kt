@@ -24,6 +24,11 @@ class Bienvenido : AppCompatActivity() {
             val intent= Intent(this,Aportar::class.java)
             startActivity(intent)
         }
+        val boton_REGRESAR=findViewById<Button>(R.id.bt_regresar)
+        boton_REGRESAR.setOnClickListener {
+            val intent= Intent(this,Iniciar_Sesion::class.java)
+            startActivity(intent)
+        }
 
     }
 }
