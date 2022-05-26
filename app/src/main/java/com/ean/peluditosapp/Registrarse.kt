@@ -47,7 +47,10 @@ class Registrarse : AppCompatActivity() {
                                     Toast.makeText(baseContext, "Usuario Creado",
                                         Toast.LENGTH_SHORT).show()
                                     Log.d(TAG, "signInWithCustomToken:success")// imprimir en la terminal
-                                    //val user = auth.currentUser
+                                    val intent= Intent(this,Iniciar_Sesion::class.java)
+                                    startActivity(intent)
+
+
 
                                 } else {
                                     // If sign in fails, display a message to the user.
