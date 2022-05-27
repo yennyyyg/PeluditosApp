@@ -52,13 +52,7 @@ class Registrar_unpeludito : AppCompatActivity() {
 
             }
 
-               // .addOnFailureListener {
 
-                   // Toast.makeText(this,"FAILED",Toast.LENGTH_SHORT).show()
-
-
-
-            //}
         }
 
 

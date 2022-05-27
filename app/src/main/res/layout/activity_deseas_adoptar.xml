@@ -33,9 +33,7 @@
             android:textStyle="bold" />
 
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="14dp" />
+
 
         <LinearLayout
             android:layout_width="311dp"
@@ -59,7 +57,7 @@
         <ListView
             android:id="@+id/list_view_peluditos"
             android:layout_width="match_parent"
-            android:layout_height="296dp" />
+            android:layout_height="176dp" />
 
         <Button
             android:id="@+id/btn_refrescar"
@@ -69,6 +67,13 @@
             android:minHeight="48dp"
             android:text="Refrescar"
             android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/bt_adoptargatosyenny"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:text="adoptar gatos" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
