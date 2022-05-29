@@ -18,9 +18,6 @@
         <activity
             android:name=".Formulario_adoptargatos"
             android:exported="false" />
-
-
-
         <activity
             android:name=".Ver_imagen"
             android:exported="false" />
