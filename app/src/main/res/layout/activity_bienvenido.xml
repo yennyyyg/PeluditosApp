@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#04C3DC"
+    android:background="@color/white"
     tools:context=".Bienvenido">
 
     <LinearLayout
@@ -32,11 +32,9 @@
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="match_parent"
-            android:layout_height="265dp"
+            android:layout_width="296dp"
+            android:layout_height="188dp"
             app:srcCompat="@drawable/tierno" />
-
-
 
 
         <Button
@@ -46,7 +44,8 @@
 
             android:backgroundTint="@color/black"
             android:text="¿DESEAS ADOPTAR?"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textSize="20sp" />
 
         <Button
             android:id="@+id/bn_registrarpeludito"
@@ -55,16 +54,18 @@
 
             android:backgroundTint="@color/black"
             android:text="REGISTRAR UN PELUDITO ,PARA QUE PUEDA SER ADOPTADO "
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textSize="20sp" />
 
 
         <Button
             android:id="@+id/bt_aportar"
             android:layout_width="match_parent"
-            android:layout_height="63dp"
+            android:layout_height="87dp"
             android:backgroundTint="@color/black"
             android:text="APORTALE A NUESTROS PELUDITOS "
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textSize="20sp" />
 
         <Button
             android:id="@+id/bt_regresar"
@@ -72,7 +73,8 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@color/black"
             android:text="REGRESAR"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textSize="20sp" />
 
 
     </LinearLayout>
