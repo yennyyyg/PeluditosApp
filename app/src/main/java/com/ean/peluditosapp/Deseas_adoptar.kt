@@ -7,6 +7,7 @@ import android.util.Log
 import android.widget.*
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.ktx.storage
+import java.util.*
 
 
 class Deseas_adoptar : AppCompatActivity() {
@@ -16,7 +17,7 @@ class Deseas_adoptar : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_deseas_adoptar)
         val storageRef=storage.reference
-        val imagenes=ArrayList<String>()
+        val imagenes= ArrayList<String>()
         val imagenes2=ArrayList<String>()
         val listRef=storage.reference.child("caninos")
         val listFelinos=storage.reference.child("felinos")
@@ -71,6 +72,10 @@ class Deseas_adoptar : AppCompatActivity() {
             }
 
         }
+        // gatos yenny
+
+
+
 
 
     }

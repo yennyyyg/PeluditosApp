@@ -1,6 +1,5 @@
 package com.ean.peluditosapp
 
-import android.content.ContentValues.TAG
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast

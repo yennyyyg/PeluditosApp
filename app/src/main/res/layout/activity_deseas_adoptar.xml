@@ -75,5 +75,17 @@
             android:minHeight="48dp"
             android:text="adoptar gatos" />
 
+        <Button
+            android:id="@+id/bt_gatosyalistosn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Adopta un gato " />
+
+        <Button
+            android:id="@+id/bt_perrosyalistosn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Adopta un perro" />
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
