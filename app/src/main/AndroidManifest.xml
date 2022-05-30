@@ -12,10 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PeluditosApp">
         <activity
-            android:name=".Animales_gatos_activity"
-            android:exported="false" />
-        <activity
-            android:name=".Adoptar_gatos"
+
             android:exported="false" />
         <activity
             android:name=".Ver_imagen"
