@@ -22,14 +22,14 @@ class ImgPerros : AppCompatActivity() {
         binding1 = ActivityImgPerrosBinding.inflate(layoutInflater)
         setContentView(binding1.root)
 
-        binding1.btObtenerimagenPerro.setOnClickListener {
+        binding1.btnObtenerPerro.setOnClickListener {
 
             val progressdialog1 = ProgressDialog(this)
             progressdialog1.setMessage("fetching image... ")
             progressdialog1.setCancelable(false)
             progressdialog1.show()
 
-            val imagename1 = binding1.etImageidPerro.text.toString()
+            val imagename1 = binding1.etImageIdPerro.text.toString()
             //localizar la imagen
             val storageref1= FirebaseStorage.getInstance().reference.child("caninos/$imagename1.png")
             //nombre tal cual de la imagen
