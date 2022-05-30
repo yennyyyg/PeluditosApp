@@ -3,14 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/yenny/AndroidStudioProjects/PeluditosApp/app/src/main/res/layout/activity_aportar.xml" value="0.2617753623188406" />
+        <entry key="..\:/Users/cdgr1/AndroidStudioProjects/PeluditosApp/app/src/main/res/layout/activity_adoptar_gatos.xml" value="0.14764492753623187" />
+        <entry key="..\:/Users/cdgr1/AndroidStudioProjects/PeluditosApp/app/src/main/res/layout/activity_deseas_adoptar.xml" value="0.14764492753623187" />
         <entry key="..\:/Users/yenny/AndroidStudioProjects/PeluditosApp/app/src/main/res/layout/activity_bienvenido.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/yenny/AndroidStudioProjects/PeluditosApp/app/src/main/res/layout/activity_deseas_adoptar.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/yenny/AndroidStudioProjects/PeluditosApp/app/src/main/res/layout/activity_iniciar_sesion.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/yenny/AndroidStudioProjects/PeluditosApp/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/yenny/AndroidStudioProjects/PeluditosApp/app/src/main/res/layout/activity_registrar_unpeludito.xml" value="0.2617753623188406" />
         <entry key="..\:/Users/yenny/AndroidStudioProjects/PeluditosApp/app/src/main/res/layout/activity_registrarse.xml" value="0.22826086956521738" />
-        <entry key="..\:/Users/yenny/AndroidStudioProjects/PeluditosApp/app/src/main/res/layout/activity_ver_imagen.xml" value="0.264" />
       </map>
     </option>
   </component>
