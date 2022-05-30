@@ -24,31 +24,31 @@ class ImgPerros : AppCompatActivity() {
 
         binding1.btObtenerimagenPerro.setOnClickListener {
 
-            val progressdialog = ProgressDialog(this)
-            progressdialog.setMessage("fetching image... ")
-            progressdialog.setCancelable(false)
-            progressdialog.show()
+            val progressdialog1 = ProgressDialog(this)
+            progressdialog1.setMessage("fetching image... ")
+            progressdialog1.setCancelable(false)
+            progressdialog1.show()
 
-            val imagename = binding1.etImageidPerro.text.toString()
+            val imagename1 = binding1.etImageidPerro.text.toString()
             //localizar la imagen
-            val storageref= FirebaseStorage.getInstance().reference.child("caninos/$imagename.png")
+            val storageref1= FirebaseStorage.getInstance().reference.child("caninos/$imagename1.png")
             //nombre tal cual de la imagen
-            val localfile = File.createTempFile("tempimage,","png")
+            val localfile1 = File.createTempFile("tempimage,","png")
 
 
 
-            storageref.getFile(localfile).addOnSuccessListener {
+            storageref1.getFile(localfile1).addOnSuccessListener {
 
-                if(progressdialog.isShowing){
-                    progressdialog.dismiss()
+                if(progressdialog1.isShowing){
+                    progressdialog1.dismiss()
                 }
 
-                val bitmap = BitmapFactory.decodeFile(localfile.absolutePath)
+                val bitmap = BitmapFactory.decodeFile(localfile1.absolutePath)
                 binding1.imageViewPerro.setImageBitmap(bitmap)
 
             }.addOnFailureListener {
-                if(progressdialog.isShowing){
-                    progressdialog.dismiss()
+                if(progressdialog1.isShowing){
+                    progressdialog1.dismiss()
                 }
                 Toast.makeText(this,"ERROR",Toast.LENGTH_SHORT).show()
             }
