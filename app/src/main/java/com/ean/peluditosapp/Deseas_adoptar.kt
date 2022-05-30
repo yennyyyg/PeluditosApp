@@ -30,8 +30,8 @@ val botonadoptar1 =findViewById<Button>(R.id.bt_adoptargatosyenny)
         }
 
         val botonadoptar2 =findViewById<Button>(R.id.btn_adoptarPerro)
-        botonadoptar1.setOnClickListener {
-            val intent= Intent(this, Ver_imagen::class.java)
+        botonadoptar2.setOnClickListener {
+            val intent= Intent(this, ImgPerros::class.java)
             startActivity(intent)
         }
 
