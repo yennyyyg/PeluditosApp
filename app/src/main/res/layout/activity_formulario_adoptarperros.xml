@@ -4,9 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#00BCD4"
-    tools:context=".Registrar_unpeludito">
-
+    tools:context=".Formulario_adoptarperros">
     <LinearLayout
         android:layout_width="317dp"
         android:layout_height="685dp"
@@ -42,92 +40,94 @@
             android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="POSTULA UN PELUDITO, PARA ADOPTAR!"
+            android:text="DILIGENCIA ESTE FORMULARIO PARA QUE PUEDAS ADOPTAR A UN PERRITO!"
             android:textAlignment="textStart"
             android:textColor="@color/black"
             android:textSize="14sp"
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/txt_username"
+            android:id="@+id/txt_usernameperros"
             android:layout_width="match_parent"
             android:layout_height="61dp"
             android:ems="10"
             android:hint="Nombre completo persona a cargo "
             android:inputType="textPersonName"
             android:minHeight="48dp"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white" />
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
 
         <EditText
-            android:id="@+id/editTextPhone"
+            android:id="@+id/txtcedulaperros"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:ems="10"
+            android:hint="Cedula "
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/editTextPhoneperros"
             android:layout_width="match_parent"
             android:layout_height="67dp"
             android:ems="10"
             android:hint="Celular"
             android:inputType="phone"
             android:minHeight="48dp"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white" />
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
 
         <EditText
-
-            android:id="@+id/text_nombre_peludo"
-            android:layout_width="match_parent"
-            android:layout_height="68dp"
-            android:hint="Nombre peludito "
-            android:textColor="@color/white"
-            android:textColorHint="@color/white" />
-
-        <EditText
-            android:id="@+id/text_tipo"
-            android:layout_width="match_parent"
-            android:layout_height="68dp"
-            android:hint="Canino / Felino"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white" />
-
-        <EditText
-            android:id="@+id/txt_edad"
-            android:layout_width="match_parent"
-            android:layout_height="68dp"
-            android:ems="10"
-            android:hint="Edad aproximada (en años) "
-            android:inputType="numberDecimal"
-            android:minHeight="48dp"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white" />
-
-        <EditText
-            android:id="@+id/txt_enadopcion"
-            android:layout_width="match_parent"
-            android:layout_height="58dp"
-            android:ems="10"
-            android:hint="¿Por que lo quieres dar en adopcion?"
-            android:inputType="textPersonName"
-            android:minHeight="48dp"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white" />
-
-        <EditText
-            android:id="@+id/txt_enfermedad"
+            android:id="@+id/txtbarrioperros"
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:ems="10"
-            android:hint="¿Alguna enfermedad?"
+            android:hint="Direccion de donde vives"
             android:inputType="textPersonName"
             android:minHeight="48dp"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white" />
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+
+        <EditText
+
+            android:id="@+id/textnumeromascotasperros"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:hint="¿Cuantas mascotas tienes?"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/txttrabajoperros"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:hint="¿Cuales son tus ingresos?"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+
+        <EditText
+            android:id="@+id/txt_porquedopcionperros"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:ems="10"
+            android:hint="¿Por que quieres adoptar?"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
 
         <Button
-            android:id="@+id/btGuardarPeludo"
+            android:id="@+id/bt_formularioperros"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/black"
-            android:text="ENVIAR"
+            android:backgroundTint="#EA95B2"
+            android:text="ENVIAR FORMULARIO"
             android:textAlignment="center"
-            android:textColor="@color/white" />
+            android:textColor="@color/black" />
 
     </LinearLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
