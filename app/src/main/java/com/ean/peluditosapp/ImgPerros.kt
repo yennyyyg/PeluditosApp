@@ -4,30 +4,32 @@ import android.app.ProgressDialog
 import android.graphics.BitmapFactory
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.LayoutInflater
 import android.widget.Toast
 import com.ean.peluditosapp.databinding.ActivityImgPerrosBinding
+
 import com.ean.peluditosapp.databinding.ActivityVerImagenBinding
+import com.google.firebase.ktx.Firebase
 import com.google.firebase.storage.FirebaseStorage
 import java.io.File
 
 class ImgPerros : AppCompatActivity() {
-
-    lateinit var binding : ActivityImgPerrosBinding
+    lateinit var binding1 :ActivityImgPerrosBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        //setContentView(R.layout.activity_img_perros
-                binding = ActivityImgPerrosBinding.inflate(layoutInflater)
-                setContentView(binding.root)
+        //setContentView(R.layout.activity_ver_imagen)
+        binding1 = ActivityImgPerrosBinding.inflate(layoutInflater)
+        setContentView(binding1.root)
 
-                binding.btObtenerimagenPerro.setOnClickListener {
+        binding1.btObtenerimagenPerro.setOnClickListener {
 
             val progressdialog = ProgressDialog(this)
             progressdialog.setMessage("fetching image... ")
             progressdialog.setCancelable(false)
             progressdialog.show()
 
-            val imagename = binding.etImageidPerro.text.toString()
+            val imagename = binding1.etImageidPerro.text.toString()
             //localizar la imagen
             val storageref= FirebaseStorage.getInstance().reference.child("caninos/$imagename.png")
             //nombre tal cual de la imagen
@@ -42,17 +44,17 @@ class ImgPerros : AppCompatActivity() {
                 }
 
                 val bitmap = BitmapFactory.decodeFile(localfile.absolutePath)
-                binding.imageViewPerro.setImageBitmap(bitmap)
+                binding1.imageViewPerro.setImageBitmap(bitmap)
 
             }.addOnFailureListener {
                 if(progressdialog.isShowing){
                     progressdialog.dismiss()
                 }
-                Toast.makeText(this,"ERROR", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this,"ERROR",Toast.LENGTH_SHORT).show()
             }
 
 
         }
 
     }
-    }
+}
