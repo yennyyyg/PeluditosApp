@@ -12,11 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PeluditosApp">
         <activity
-            android:name=".Formulario_adoptarperros"
-            android:exported="false" />
 
-        <activity
-            android:name=".Formulario_adoptargatos"
             android:exported="false" />
         <activity
             android:name=".Ver_imagen"

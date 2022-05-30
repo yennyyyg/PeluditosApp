@@ -29,7 +29,7 @@ class Deseas_adoptar : AppCompatActivity() {
             val intent= Intent(this, Ver_imagen::class.java)
             startActivity(intent)
         }
-       //Perros
+        //Perros
         listRef.listAll()
             .addOnSuccessListener {
                 for (i in it.items){
@@ -54,12 +54,18 @@ class Deseas_adoptar : AppCompatActivity() {
         val boton_Refre=findViewById<Button>(R.id.btn_refrescar)
         val boton_Perro=findViewById<CheckBox>(R.id.chb_perro)
         val boton_Gato=findViewById<CheckBox>(R.id.chb_gato)
+
+
+
         boton_Refre.setOnClickListener {
             listaImg.clearChoices()
             if (boton_Perro.isChecked && !boton_Gato.isChecked){
 
                 val adapImg=ArrayAdapter(this,android.R.layout.simple_list_item_1,imagenes)
                 listaImg.adapter=adapImg
+
+
+
             }else if (boton_Gato.isChecked && !boton_Perro.isChecked){
                 val adapImgGato=ArrayAdapter(this,android.R.layout.simple_list_item_1,imagenes2)
                 listaImg.adapter=adapImgGato
@@ -73,6 +79,10 @@ class Deseas_adoptar : AppCompatActivity() {
 
         }
         // gatos yenny
+
+
+
+
 
 
 
