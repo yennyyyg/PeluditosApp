@@ -23,10 +23,15 @@ class Deseas_adoptar : AppCompatActivity() {
         val listFelinos=storage.reference.child("felinos")
         val listaImg=findViewById<ListView>(R.id.list_view_peluditos)
         // imagenes adoptar yenny
-
-        val botonadoptar1 = findViewById<Button>(R.id.bt_adoptargatosyenny)
+val botonadoptar1 =findViewById<Button>(R.id.bt_adoptargatosyenny)
         botonadoptar1.setOnClickListener {
             val intent= Intent(this, Ver_imagen::class.java)
+            startActivity(intent)
+        }
+
+        val botonadoptargto = findViewById<Button>(R.id.bt_gatosyalistosn)
+        botonadoptargto.setOnClickListener {
+            val intent= Intent(this,Adoptar_gatos::class.java)
             startActivity(intent)
         }
         //Perros
