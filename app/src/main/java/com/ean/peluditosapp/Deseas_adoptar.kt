@@ -29,11 +29,13 @@ val botonadoptar1 =findViewById<Button>(R.id.bt_adoptargatosyenny)
             startActivity(intent)
         }
 
-        val botonadoptargto = findViewById<Button>(R.id.bt_gatosyalistosn)
-        botonadoptargto.setOnClickListener {
-            val intent= Intent(this,Adoptar_gatos::class.java)
+        val botonadoptar2 =findViewById<Button>(R.id.btn_adoptarPerro)
+        botonadoptar1.setOnClickListener {
+            val intent= Intent(this, Ver_imagen::class.java)
             startActivity(intent)
         }
+
+
         //Perros
         listRef.listAll()
             .addOnSuccessListener {

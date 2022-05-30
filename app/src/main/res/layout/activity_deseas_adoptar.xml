@@ -76,16 +76,10 @@
             android:text="adoptar gatos" />
 
         <Button
-            android:id="@+id/bt_gatosyalistosn"
+            android:id="@+id/btn_adoptarPerro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Adopta un gato " />
-
-        <Button
-            android:id="@+id/bt_perrosyalistosn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Adopta un perro" />
+            android:text="ADOPTAR PERROS" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
