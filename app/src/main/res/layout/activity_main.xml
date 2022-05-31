@@ -1,81 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#8DC5F3"
-    tools:context=".MainActivity">
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/main_screen"
+tools:context=".MainActivity">
 
-    <LinearLayout
-        android:layout_width="365dp"
-        android:layout_height="675dp"
-        android:gravity="center_horizontal|center_vertical"
-        android:orientation="vertical"
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bn_registrarpeludito"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:background="@color/black"
+        android:text="Iniciar Sesion"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.812"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.326" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bn_deseas_adop"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="396dp"
+        android:background="@color/black"
+        android:text="Registrar"
+        android:textColor="@color/white"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.62">
+        app:layout_constraintTop_toBottomOf="@+id/bn_registrarpeludito"
+        app:layout_constraintVertical_bias="1.0" />
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bn_cerrar_sesion_am"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="328dp"
+        android:background="@color/black"
+        android:text="Cerrar Sesion"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bn_deseas_adop"
+        app:layout_constraintVertical_bias="0.85" />
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="349dp"
-            android:layout_height="106dp"
-            android:text="¡ADOPTA A UN PELUDITO!"
-            android:textAlignment="center"
-            android:textAllCaps="false"
-            android:textColor="@color/black"
-            android:textSize="34sp"
-            android:textStyle="bold" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="208dp"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:id="@+id/imageView8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/kk"
-                />
-        </LinearLayout>
-
-        <Button
-            android:id="@+id/bn_deseas_adop"
-            android:layout_width="match_parent"
-            android:layout_height="63dp"
-            android:layout_marginTop="20dp"
-            android:backgroundTint="#F891B4"
-            android:text="Iniciar Sesion"
-            android:textColor="@color/black"
-            android:textStyle="bold" />
-
-
-        <Button
-            android:id="@+id/bn_registrarpeludito"
-            android:layout_width="match_parent"
-            android:layout_height="62dp"
-            android:layout_marginTop="10dp"
-
-            android:backgroundTint="#56C1F1"
-            android:text="Registrarse"
-            android:textColor="@color/black"
-            android:textStyle="bold" />
-
-
-        <Button
-            android:id="@+id/bn_cerrar_sesion_am"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/white"
-            android:text="Cerrar Sesion"
-            android:textColor="@color/black"
-            android:visibility="invisible" />
-
-
-    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
