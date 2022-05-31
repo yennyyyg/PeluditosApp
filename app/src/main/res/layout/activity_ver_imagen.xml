@@ -4,43 +4,71 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    android:orientation="vertical"
-
     android:layout_marginHorizontal="16dp"
+    android:background="#8DC5F3"
+
+    android:orientation="vertical"
     tools:context=".Ver_imagen">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="GATOS EN ADOPCION!"
+        android:text="ADOPTA NO COMPRES!"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
-    <ImageView
-        android:id="@+id/imageView"
+    <TextView
+        android:id="@+id/textView7"
         android:layout_width="match_parent"
-        android:layout_height="281dp"
-        android:layout_marginVertical="30dp"
-        android:scaleType="centerCrop" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Escribe el nombre del gato o perro que quieras adoptar, los nombres estan en la lista de la pestaña anterior,
+         ESCRIBELO TAL CUAL, GRACIAS!"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/etImageid"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:hint="Nombre del gato "
+        android:layout_marginTop="10dp"
+        android:hint="Nombre"
         android:minHeight="48dp"
+        android:textAlignment="center"
+        android:textAllCaps="false"
         android:textColor="@color/black"
-        android:textColorHint="@color/black" />
+        android:textColorHint="@color/black"
+        android:textStyle="bold|italic" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:layout_marginVertical="30dp"
+        android:scaleType="centerCrop" />
 
     <Button
         android:id="@+id/bt_obtenerimagen"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:text="Adoptar" />
+        android:layout_height="59dp"
+        android:backgroundTint="#F891B4"
+        android:text="Buscar"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/bt_adoptargatos"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:backgroundTint="#57C9FD"
+        android:text="Adoptar"
+        android:textColor="@color/black"
+        android:textStyle="bold" />
 
 
 </LinearLayout>

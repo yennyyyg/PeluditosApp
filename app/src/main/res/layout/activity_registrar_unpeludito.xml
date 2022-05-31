@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#00BCD4"
+    android:background="#8DC5F3"
     tools:context=".Registrar_unpeludito">
 
     <LinearLayout
@@ -24,40 +24,34 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:id="@+id/imageView4"
-                android:layout_width="156dp"
-                android:layout_height="102dp"
-                app:srcCompat="@drawable/pet" />
-
-            <ImageView
                 android:id="@+id/imageView5"
-                android:layout_width="231dp"
-                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 app:srcCompat="@drawable/happy" />
-
         </LinearLayout>
 
         <TextView
             android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="POSTULA UN PELUDITO, PARA ADOPTAR!"
+            android:text="POSTULA UN PELUDITO, PARA ADOPTAR:"
             android:textAlignment="textStart"
             android:textColor="@color/black"
-            android:textSize="14sp"
+            android:textSize="16sp"
             android:textStyle="bold" />
 
         <EditText
             android:id="@+id/txt_username"
             android:layout_width="match_parent"
             android:layout_height="61dp"
+            android:layout_marginTop="20dp"
             android:ems="10"
             android:hint="Nombre completo persona a cargo "
             android:inputType="textPersonName"
             android:minHeight="48dp"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white" />
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
 
         <EditText
             android:id="@+id/editTextPhone"
@@ -67,8 +61,8 @@
             android:hint="Celular"
             android:inputType="phone"
             android:minHeight="48dp"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white" />
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
 
         <EditText
 
@@ -76,16 +70,16 @@
             android:layout_width="match_parent"
             android:layout_height="68dp"
             android:hint="Nombre peludito "
-            android:textColor="@color/white"
-            android:textColorHint="@color/white" />
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
 
         <EditText
             android:id="@+id/text_tipo"
             android:layout_width="match_parent"
             android:layout_height="68dp"
             android:hint="Canino / Felino"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white" />
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
 
         <EditText
             android:id="@+id/txt_edad"
@@ -95,8 +89,8 @@
             android:hint="Edad aproximada (en años) "
             android:inputType="numberDecimal"
             android:minHeight="48dp"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white" />
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
 
         <EditText
             android:id="@+id/txt_enadopcion"
@@ -106,8 +100,8 @@
             android:hint="¿Por que lo quieres dar en adopcion?"
             android:inputType="textPersonName"
             android:minHeight="48dp"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white" />
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
 
         <EditText
             android:id="@+id/txt_enfermedad"
@@ -117,17 +111,17 @@
             android:hint="¿Alguna enfermedad?"
             android:inputType="textPersonName"
             android:minHeight="48dp"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white" />
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
 
         <Button
             android:id="@+id/btGuardarPeludo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/black"
+            android:backgroundTint="#F891B4"
             android:text="ENVIAR"
             android:textAlignment="center"
-            android:textColor="@color/white" />
+            android:textColor="@color/black" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

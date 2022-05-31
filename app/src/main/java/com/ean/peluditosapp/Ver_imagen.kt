@@ -1,10 +1,12 @@
 package com.ean.peluditosapp
 
 import android.app.ProgressDialog
+import android.content.Intent
 import android.graphics.BitmapFactory
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
+import android.widget.Button
 import android.widget.Toast
 
 import com.ean.peluditosapp.databinding.ActivityVerImagenBinding
@@ -21,6 +23,12 @@ class Ver_imagen : AppCompatActivity() {
         binding = ActivityVerImagenBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        var adoptargg = findViewById<Button>(R.id.bt_adoptargatos)
+        adoptargg.setOnClickListener {
+            val intent= Intent(this,Formulario_adoptargatos::class.java)
+            startActivity(intent)
+        }
+
         binding.btObtenerimagen.setOnClickListener {
 
             val progressdialog = ProgressDialog(this)
@@ -30,7 +38,7 @@ class Ver_imagen : AppCompatActivity() {
 
             val imagename = binding.etImageid.text.toString()
             //localizar la imagen
-            val storageref= FirebaseStorage.getInstance().reference.child("felinos/$imagename.jfif")
+            val storageref= FirebaseStorage.getInstance().reference.child("mascotas/$imagename.jfif")
             //nombre tal cual de la imagen
             val localfile = File.createTempFile("tempimage,","jfif")
 

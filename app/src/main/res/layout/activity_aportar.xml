@@ -4,12 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#00BCD4"
+    android:background="#8DC5F3"
     tools:context=".Aportar">
 
     <LinearLayout
-        android:layout_width="347dp"
-        android:layout_height="617dp"
+        android:layout_width="345dp"
+        android:layout_height="657dp"
         android:gravity="center_vertical"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -25,6 +25,7 @@
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="24sp"
+
             android:textStyle="bold" />
 
         <ImageView
@@ -33,6 +34,15 @@
             android:layout_height="148dp"
             app:srcCompat="@drawable/jeje" />
 
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Completa este formulario: "
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"/>
+
         <EditText
             android:id="@+id/tx_nombreaporytar"
             android:layout_width="match_parent"
@@ -40,7 +50,10 @@
             android:ems="10"
             android:hint="Nombre Completo"
             android:inputType="textPersonName"
-            android:minHeight="48dp" />
+            android:minHeight="48dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:layout_marginTop="10dp"/>
 
         <EditText
             android:id="@+id/txt_cedilaaporytar"
@@ -49,7 +62,9 @@
             android:ems="10"
             android:hint="Cedula"
             android:inputType="number"
-            android:minHeight="48dp" />
+            android:minHeight="48dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
 
         <EditText
             android:id="@+id/txt_celularaportar"
@@ -58,7 +73,9 @@
             android:ems="10"
             android:hint="Celular"
             android:inputType="phone"
-            android:minHeight="48dp" />
+            android:minHeight="48dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
 
         <EditText
             android:id="@+id/txt_dineroaportar"
@@ -67,7 +84,9 @@
             android:ems="10"
             android:hint="¿Cuanto dinero deseas aportar? "
             android:inputType="numberDecimal"
-            android:minHeight="48dp" />
+            android:minHeight="48dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
 
         <EditText
             android:id="@+id/txt_otrosaportar"
@@ -76,23 +95,27 @@
             android:ems="10"
             android:hint="¿Deseas donar algo material ? "
             android:inputType="textPersonName"
-            android:minHeight="48dp" />
+            android:minHeight="48dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
 
         <Button
             android:id="@+id/bt_aportaraportar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/black"
+            android:backgroundTint="#ED89AB"
             android:text="ENVIAR"
-            android:textColor="@color/white" />
+            android:textColor="@color/black"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/bt_atrasaportar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/black"
+            android:backgroundTint="#58C4F4"
             android:text="REGRESAR"
-            android:textColor="@color/white" />
+            android:textColor="@color/black"
+            android:textStyle="bold" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

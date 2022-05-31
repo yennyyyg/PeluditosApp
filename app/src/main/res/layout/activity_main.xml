@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#00BCD4"
+    android:background="#8DC5F3"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -36,51 +36,36 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:id="@+id/imageView6"
-                android:layout_width="121dp"
-                android:layout_height="match_parent"
-                app:srcCompat="@drawable/owner" />
-
-            <ImageView
-                android:id="@+id/imageView7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/kk" />
-
-            <ImageView
                 android:id="@+id/imageView8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/jij" />
+                app:srcCompat="@drawable/kk"
+                />
         </LinearLayout>
 
         <Button
             android:id="@+id/bn_deseas_adop"
             android:layout_width="match_parent"
             android:layout_height="63dp"
-
-            android:backgroundTint="@color/black"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#F891B4"
             android:text="Iniciar Sesion"
-            android:textColor="@color/white" />
+            android:textColor="@color/black"
+            android:textStyle="bold" />
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
 
         <Button
             android:id="@+id/bn_registrarpeludito"
             android:layout_width="match_parent"
             android:layout_height="62dp"
+            android:layout_marginTop="10dp"
 
-            android:backgroundTint="@color/black"
+            android:backgroundTint="#56C1F1"
             android:text="Registrarse"
-            android:textColor="@color/white" />
+            android:textColor="@color/black"
+            android:textStyle="bold" />
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="11dp" />
 
         <Button
             android:id="@+id/bn_cerrar_sesion_am"
