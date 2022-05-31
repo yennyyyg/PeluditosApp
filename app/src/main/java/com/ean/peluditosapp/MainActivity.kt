@@ -26,15 +26,7 @@ class MainActivity : AppCompatActivity() {
         //Este boton me lleva a la actividad de login
 
 
-        val boton_cerrar_sesion=findViewById<Button>(R.id.bn_cerrar_sesion_am)
-        boton_cerrar_sesion.setOnClickListener {
-            auth.signOut()//cierra sesion
-            if(auth.currentUser==null){
-                boton_cerrar_sesion.visibility= View.INVISIBLE
-                boton_login.visibility=View.VISIBLE
-                boton_registrar_usuario.visibility=View.VISIBLE
-            }
-        }
+
 
 
     }

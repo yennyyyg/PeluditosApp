@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginHorizontal="16dp"
-    android:background="#8DC5F3"
+    android:background="@color/yellow"
 
     android:orientation="vertical"
     tools:context=".Ver_imagen">
@@ -56,7 +56,7 @@
         android:id="@+id/bt_obtenerimagen"
         android:layout_width="match_parent"
         android:layout_height="59dp"
-        android:backgroundTint="#F891B4"
+        android:backgroundTint="@color/white"
         android:text="Buscar"
         android:textColor="@color/black"
         android:textStyle="bold" />
@@ -65,7 +65,7 @@
         android:id="@+id/bt_adoptargatos"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:backgroundTint="#57C9FD"
+        android:backgroundTint="@color/white"
         android:text="Adoptar"
         android:textColor="@color/black"
         android:textStyle="bold" />

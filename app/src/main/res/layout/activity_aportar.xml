@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#8DC5F3"
+    android:background="@color/yellow"
     tools:context=".Aportar">
 
     <LinearLayout
@@ -38,22 +38,22 @@
             android:id="@+id/textView6"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:text="Completa este formulario: "
             android:textColor="@color/black"
-            android:textSize="20sp"
-            android:layout_marginTop="10dp"/>
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/tx_nombreaporytar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:ems="10"
             android:hint="Nombre Completo"
             android:inputType="textPersonName"
             android:minHeight="48dp"
             android:textColor="@color/black"
-            android:textColorHint="@color/black"
-            android:layout_marginTop="10dp"/>
+            android:textColorHint="@color/black" />
 
         <EditText
             android:id="@+id/txt_cedilaaporytar"
@@ -103,7 +103,7 @@
             android:id="@+id/bt_aportaraportar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="#ED89AB"
+            android:backgroundTint="@color/white"
             android:text="ENVIAR"
             android:textColor="@color/black"
             android:textStyle="bold" />
@@ -112,7 +112,7 @@
             android:id="@+id/bt_atrasaportar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="#58C4F4"
+            android:backgroundTint="@color/white"
             android:text="REGRESAR"
             android:textColor="@color/black"
             android:textStyle="bold" />

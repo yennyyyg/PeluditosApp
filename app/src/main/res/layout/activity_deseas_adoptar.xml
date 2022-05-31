@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#8DC5F3"
+    android:background="@color/yellow"
     tools:context=".Deseas_adoptar">
 
     <LinearLayout
@@ -20,7 +20,7 @@
             android:id="@+id/imageView9"
             android:layout_width="match_parent"
             android:layout_height="167dp"
-            app:srcCompat="@drawable/cute" />
+            app:srcCompat="@drawable/mariposa" />
 
         <TextView
             android:id="@+id/textView3"
@@ -57,14 +57,14 @@
             android:id="@+id/list_view_peluditos"
             android:layout_width="match_parent"
             android:layout_height="267dp"
-            android:background="#8DC5F3"
+            android:background="@color/yellow"
             android:cacheColorHint="@color/black" />
 
         <Button
             android:id="@+id/btn_refrescar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="#F891B4"
+            android:backgroundTint="@color/white"
             android:minHeight="48dp"
             android:text="VER LISTA"
             android:textAlignment="center"
@@ -75,7 +75,7 @@
             android:id="@+id/bt_adoptargatosyenny"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="#44B7EC"
+            android:backgroundTint="@color/white"
             android:minHeight="48dp"
             android:text="ADOPTAME"
             android:textAlignment="center"

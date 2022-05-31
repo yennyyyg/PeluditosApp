@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#8DC5F3"
+    android:background="@color/yellow"
     tools:context=".Registrar_unpeludito">
 
     <LinearLayout
@@ -118,7 +118,7 @@
             android:id="@+id/btGuardarPeludo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="#F891B4"
+            android:backgroundTint="@color/white"
             android:text="ENVIAR"
             android:textAlignment="center"
             android:textColor="@color/black" />

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#8DC5F3"
+    android:background="@color/yellow"
     tools:context=".Bienvenido">
 
     <LinearLayout
@@ -42,7 +42,7 @@
             android:layout_width="match_parent"
             android:layout_height="63dp"
 
-            android:backgroundTint="#F891B4"
+            android:backgroundTint="@color/white"
             android:fontFamily="sans-serif-medium"
             android:text="¿DESEAS ADOPTAR?"
             android:textColor="@color/black"
@@ -54,7 +54,7 @@
             android:layout_width="match_parent"
             android:layout_height="58dp"
 
-            android:backgroundTint="#56C4F6"
+            android:backgroundTint="@color/white"
             android:text="REGISTRAR UN PERRITO O GATICO "
             android:textColor="@color/black"
             android:textSize="16sp"
@@ -65,7 +65,7 @@
             android:id="@+id/bt_aportar"
             android:layout_width="match_parent"
             android:layout_height="66dp"
-            android:backgroundTint="#F891B4"
+            android:backgroundTint="@color/white"
             android:text="APORTALE A NUESTROS PELUDITOS "
             android:textColor="@color/black"
             android:textSize="16sp"
@@ -75,7 +75,7 @@
             android:id="@+id/bt_regresar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="#56C4F6"
+            android:backgroundTint="@color/white"
             android:text="REGRESAR"
             android:textColor="@color/black"
             android:textSize="16sp"
